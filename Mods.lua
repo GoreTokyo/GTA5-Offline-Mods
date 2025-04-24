@@ -227,7 +227,7 @@ end
 menu.toggle_loop(animations, "X Key To Stop Animation", {}, "", function()
     if PAD.IS_CONTROL_PRESSED(0, 73) then
         Animation.cancel(PLAYER.PLAYER_PED_ID())
-        yield(200)
+        yield(400)
     end
 end)
 
